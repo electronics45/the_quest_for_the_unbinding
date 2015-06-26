@@ -66,15 +66,15 @@ public class KeyBinding
 			}
 		}
 
-		// All required keys are down.
-		m_isTriggeredDown = true;
-
 		// If we only want to trigger the action once, and we've
 		// already triggered is once, return.
 		if (!m_isContinuous && m_isTriggeredDown == true)
 		{
 			return;
 		}
+
+		// All required keys are down.
+		m_isTriggeredDown = true;
 
 		// All keys are pressed.  Execute action if set
 		if (m_bindingAction != null)

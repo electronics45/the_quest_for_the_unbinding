@@ -3,12 +3,11 @@ using System.Collections;
 
 public class Movement : MonoBehaviour, BindingAction
 {
-	public float m_moveSpeed = 10;
-	public float m_maxMoveSpeed = 100;
+	public float m_moveSpeed = 100;
+	public float m_maxMoveSpeed = 10;
 
 	float m_moveFactor = 60; // Expected 60 frames per second.
 
-	int m_numMovements = 0;
 	bool m_isStopping = false;
 
 	// Use this for initialization
@@ -16,6 +15,7 @@ public class Movement : MonoBehaviour, BindingAction
 		KeyBinding binding = new KeyBinding ("left", this);
 		binding.setIsContinuous (true);
 		binding.addKeyDown (KeyCode.A);
+		binding.addKeyDown (KeyCode.G);
 
 		GetComponent <KeyBindings> ().aquireKeyBinding (binding);
 
