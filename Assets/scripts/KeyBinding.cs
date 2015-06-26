@@ -5,9 +5,13 @@ using System.Collections.Generic;
 public class KeyBinding
 {
 	public BindingAction m_bindingAction;
+	public bool m_isContinuous = false;
+
 	string m_bindingName;
 
 	List <KeyCode> requiredKeysDown = new List<KeyCode>();
+	bool m_isTriggeredDown = false;
+	//bool m_isTriggerReleased = false;
 
 	public KeyBinding (string bindingName, BindingAction action)
 	{
@@ -25,14 +29,19 @@ public class KeyBinding
 		evaluateKeysDown ();
 	}
 
-	public void addKeyDownPress (KeyCode kCode)
+	public void addKeyDown (KeyCode kCode)
 	{
 		requiredKeysDown.Add (kCode);
 	}
 
-	public void addKeyDownHold (KeyCode kCode)
+//	public void addKeyDownHold (KeyCode kCode)
+//	{
+//		requiredKeysDown.Add (kCode);
+//	}
+
+	public void setIsContinuous (bool continuous)
 	{
-		requiredKeysDown.Add (kCode);
+		m_isContinuous = continuous;
 	}
 
 	void evaluateKeysDown ()
@@ -44,14 +53,32 @@ public class KeyBinding
 
 		foreach (KeyCode keyCode in requiredKeysDown)
 		{
-			if (!Input.GetKeyDown (keyCode))
+			if (!Input.GetKey (keyCode))
 			{
+				if (m_isTriggeredDown == true && m_bindingAction != null)
+				{
+					// Now releasing the keybinding.
+					m_bindingAction.onBindingRelease (m_bindingName);
+				}
+
+				m_isTriggeredDown = false;
 				return;
 			}
 		}
 
-		// All keys are pressed.  Execute action if set.
-		if (m_bindingAction != null) {
+		// All required keys are down.
+		m_isTriggeredDown = true;
+
+		// If we only want to trigger the action once, and we've
+		// already triggered is once, return.
+		if (!m_isContinuous && m_isTriggeredDown == true)
+		{
+			return;
+		}
+
+		// All keys are pressed.  Execute action if set
+		if (m_bindingAction != null)
+		{
 			m_bindingAction.executeBinding (m_bindingName);
 		}
 	}
