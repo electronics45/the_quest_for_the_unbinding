@@ -9,11 +9,15 @@ public class Movement : MonoBehaviour, BindingAction
 	public bool isMovementEnabled = true;
 
 	float m_moveFactor = 60; // Expected 60 frames per second.
+	float distToGround;
 
 	bool m_isStopping = false;
 
 	// Use this for initialization
 	void Start () {
+		distToGround = GetComponent <Collider> ().bounds.extents.y;
+
+		// Default Keybindings.
 		KeyBinding binding = new KeyBinding ("left", this);
 		binding.setIsContinuous (true);
 		binding.addKeyDown (KeyCode.A);
@@ -110,6 +114,16 @@ public class Movement : MonoBehaviour, BindingAction
 	public void stop ()
 	{
 		m_isStopping = true;
+	}
+
+	public void snapToGround()
+	{
+		RaycastHit hitPoint;
+
+		if (Physics.Raycast(transform.position, -transform.up, out hitPoint))
+		{
+			transform.position += (hitPoint.distance - distToGround) * Vector3.down;
+		}
 	}
 
 	void stopALittle ()

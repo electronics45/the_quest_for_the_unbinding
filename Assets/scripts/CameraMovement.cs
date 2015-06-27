@@ -50,6 +50,11 @@ public class CameraMovement : MonoBehaviour {
 
 	public void cameraSnapToPlayer ()
 	{
+		Vector3 targetPos = gameObject.transform.position;
 
+		targetPos.x = player.gameObject.transform.position.x;
+		targetPos.y = player.gameObject.transform.position.y + camTargetHeight;
+
+		transform.position = targetPos;
 	}
 }
