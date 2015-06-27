@@ -56,21 +56,25 @@ public class DoorActuation : MonoBehaviour, BindingAction
 	{
 		// Move player to new position.
 		Vector3 newPos = player.transform.position;
-		float doorSpawnOffset = 30;
+		float doorSpawnOffset = 3;
 
 		newPos.x = adjoiningDoor.gameObject.transform.position.x;
 		newPos.y = adjoiningDoor.gameObject.transform.position.y;
 
-		if (!isFrontFacingDoor)
+		if (!adjoiningDoor.isFrontFacingDoor)
 		{
 			Vector3 doorRotation = adjoiningDoor.gameObject.transform.eulerAngles;
-			if (doorRotation.y < 5 || doorRotation.y > 350)
+			if (doorRotation.y > 85 && doorRotation.y < 100)
 			{
-				newPos.x += doorSpawnOffset;
+				newPos.x -= doorSpawnOffset;
+				// Set Player's rotation.
+				player.transform.eulerAngles = new Vector3 (0,180,0);
 			}
 			else
 			{
-				newPos.x -= doorSpawnOffset;
+				newPos.x += doorSpawnOffset;
+				// Set Player's rotation.
+				player.transform.eulerAngles = new Vector3 (0,0,0);
 			}
 		}
 

@@ -28,7 +28,6 @@ public class CameraMovement : MonoBehaviour {
 	void FixedUpdate()
 	{
 		fixedUpdatePerformed = true;
-
 	}
 
 	void cameraLagLerp ()

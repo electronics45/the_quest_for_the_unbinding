@@ -708,6 +708,7 @@ GameObject:
   - 23: {fileID: 1523351637}
   - 65: {fileID: 1523351636}
   - 114: {fileID: 1523351635}
+  - 65: {fileID: 1523351640}
   m_Layer: 0
   m_Name: door 2
   m_TagString: Untagged
@@ -727,7 +728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   adjoiningDoor: {fileID: 826433723}
-  isFrontFacingDoor: 1
+  isFrontFacingDoor: 0
 --- !u!65 &1523351636
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -738,8 +739,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.43030429, y: -10.3371935, z: 9.99999905}
-  m_Center: {x: -.184773445, y: 5.16860342, z: -3.19855144e-06}
+  m_Size: {x: 7.10195684, y: -3.1282382, z: 9.99999905}
+  m_Center: {x: -.0660254434, y: 1.56416893, z: -3.70572388e-06}
 --- !u!23 &1523351637
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -777,12 +778,24 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1523351634}
-  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: -4.4000001, y: -35.7000008, z: 9}
+  m_LocalRotation: {x: -.50000006, y: -.50000006, z: -.5, w: .49999994}
+  m_LocalPosition: {x: -27.7900009, y: -35.7000008, z: 2.8599999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!65 &1523351640
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1523351634}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 10.000001, y: .67055583, z: 10.000001}
+  m_Center: {x: 3.99672899e-08, y: -.335269928, z: -1.9983645e-08}
 --- !u!1 &1694844729
 GameObject:
   m_ObjectHideFlags: 0
