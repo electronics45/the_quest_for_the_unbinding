@@ -122,7 +122,7 @@ public class Movement : MonoBehaviour, BindingAction
 
 		if (Physics.Raycast(transform.position, -transform.up, out hitPoint))
 		{
-			transform.position += (hitPoint.distance - distToGround) * Vector3.down;
+			transform.position += (hitPoint.distance) * Vector3.down;
 		}
 	}
 
