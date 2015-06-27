@@ -9,7 +9,7 @@ public class KeyBinding
 
 	public string m_bindingName;
 
-	List <KeyCode> requiredKeysDown = new List<KeyCode>();
+	public List <KeyCode> requiredKeysDown = new List<KeyCode>();
 	bool m_isTriggeredDown = false;
 	//bool m_isTriggerReleased = false;
 
