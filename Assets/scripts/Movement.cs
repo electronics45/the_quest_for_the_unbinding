@@ -6,6 +6,8 @@ public class Movement : MonoBehaviour, BindingAction
 	public float m_moveSpeed = 100;
 	public float m_maxMoveSpeed = 10;
 
+	public bool isMovementEnabled = true;
+
 	float m_moveFactor = 60; // Expected 60 frames per second.
 
 	bool m_isStopping = false;
@@ -35,16 +37,15 @@ public class Movement : MonoBehaviour, BindingAction
 		}
 	}
 
-	void moveRight ()
+	public void moveRight ()
 	{
 		Rigidbody body = GetComponent <Rigidbody> ();
 
 		float additionalForce = Time.deltaTime * m_moveSpeed * m_moveFactor;
 
-//		if (body.velocity.x - additionalForce < -m_maxMoveSpeed)
-//		{
-//			additionalForce = m_maxMoveSpeed - 
-//		}
+		Vector3 angles = transform.localEulerAngles;
+		angles.y = 0;
+		transform.localEulerAngles = angles;
 
 		if (body.velocity.x < m_maxMoveSpeed)
 		{
@@ -61,12 +62,18 @@ public class Movement : MonoBehaviour, BindingAction
 //		{
 //			body.velocity = new Vector3 (-m_maxMoveSpeed, body.velocity.y, body.velocity.z);
 //		}
+
+		m_isStopping = false;
 	}
 
-	void moveLeft ()
+	public void moveLeft ()
 	{
-		Rigidbody body = GetComponent <Rigidbody> ();
-		
+		// Update Rotation
+		Vector3 angles = transform.localEulerAngles;
+		angles.y = 180;
+		transform.localEulerAngles = angles;
+
+		Rigidbody body = GetComponent <Rigidbody> ();		
 		float additionalForce = Time.deltaTime * m_moveSpeed * m_moveFactor;
 		
 		//		if (body.velocity.x - additionalForce < -m_maxMoveSpeed)
@@ -82,6 +89,27 @@ public class Movement : MonoBehaviour, BindingAction
 		{
 			body.velocity = new Vector3 (-m_maxMoveSpeed, body.velocity.y, body.velocity.z);
 		}
+
+		m_isStopping = false;
+	}
+
+	public void moveInFacingDirection()
+	{
+		float rotation = transform.eulerAngles.y;
+
+		if (rotation < 5 || rotation > 350)
+		{
+			moveRight ();
+		}
+		else
+		{
+			moveLeft();
+		}
+	}
+
+	public void stop ()
+	{
+		m_isStopping = true;
 	}
 
 	void stopALittle ()
@@ -108,6 +136,26 @@ public class Movement : MonoBehaviour, BindingAction
 
 	void BindingAction.executeBinding (string actionName)
 	{
+//		// Setup rotation.
+//		if (actionName == "left")
+//		{
+//			Vector3 angles = transform.localEulerAngles;
+//			angles.y = 180;
+//			transform.localEulerAngles = angles;
+//		}
+//		else if (actionName == "right")
+//		{
+//			Vector3 angles = transform.localEulerAngles;
+//			angles.y = 0;
+//			transform.localEulerAngles = angles;
+//		}
+
+		// Movement keys will not work on stairs and such.
+		if (!isMovementEnabled)
+		{
+			return;
+		}
+
 		if (actionName == "left")
 		{
 			//move (new Vector3 (-1,0,0));
@@ -118,15 +166,11 @@ public class Movement : MonoBehaviour, BindingAction
 			//move (new Vector3 (-1,0,0));
 			moveRight ();
 		}
-
-		m_isStopping = false;
 	}
 
 	void BindingAction.onBindingRelease (string actionName)
 	{
 		// This is set to "false" for every frame that a key is being held down.
 		m_isStopping = true;
-
-		Debug.Log ("stopping");
 	}
 }
