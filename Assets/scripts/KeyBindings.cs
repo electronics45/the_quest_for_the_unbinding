@@ -6,7 +6,7 @@ public class KeyBindings : MonoBehaviour {
 
 	public bool isUnbound = false;
 
-	List <KeyBinding> m_keyBindings = new List <KeyBinding>();
+	public List <KeyBinding> m_keyBindings = new List <KeyBinding>();
 
 	// Use this for initialization
 	void Start () {

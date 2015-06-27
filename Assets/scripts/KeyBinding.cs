@@ -7,7 +7,7 @@ public class KeyBinding
 	public BindingAction m_bindingAction;
 	public bool m_isContinuous = false;
 
-	string m_bindingName;
+	public string m_bindingName;
 
 	List <KeyCode> requiredKeysDown = new List<KeyCode>();
 	bool m_isTriggeredDown = false;
