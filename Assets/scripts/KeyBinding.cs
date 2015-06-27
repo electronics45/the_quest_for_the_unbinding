@@ -34,6 +34,12 @@ public class KeyBinding
 		requiredKeysDown.Add (kCode);
 	}
 
+	public void Clear()
+	{
+		requiredKeysDown.Clear();
+	}
+
+
 	public void setIsContinuous (bool continuous)
 	{
 		m_isContinuous = continuous;
