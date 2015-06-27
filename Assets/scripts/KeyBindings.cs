@@ -8,6 +8,8 @@ public class KeyBindings : MonoBehaviour {
 
 	public List <KeyBinding> m_keyBindings = new List <KeyBinding>();
 
+	Hashtable bindingActions = new Hashtable();
+
 	// Use this for initialization
 	void Start () {
 	
@@ -29,6 +31,16 @@ public class KeyBindings : MonoBehaviour {
 	public void discardKeyBinding (KeyBinding binding)
 	{
 		m_keyBindings.Remove (binding);
+	}
+
+	public BindingAction getBindingAction (string bindingName)
+	{
+		return (BindingAction) bindingActions [bindingName];
+	}
+
+	public void registerBindingAction (string bindingName, BindingAction action)
+	{
+		bindingActions [bindingName] = action;
 	}
 }
 

@@ -17,6 +17,8 @@ public class BoxMovement : MonoBehaviour, BindingAction
 		distToGround = GetComponent <Collider> ().bounds.extents.y;
 		distToEdge = GetComponent <Collider> ().bounds.extents.x;
 
+		player.GetComponent <KeyBindings> ().registerBindingAction ("push", this);
+
 		// Setup default keyBindings.
 		KeyBinding binding = new KeyBinding ("push", this);
 	//	binding.setIsContinuous (true);

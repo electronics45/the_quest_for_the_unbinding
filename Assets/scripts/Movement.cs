@@ -17,6 +17,8 @@ public class Movement : MonoBehaviour, BindingAction
 	void Start () {
 		distToGround = GetComponent <Collider> ().bounds.extents.y;
 
+		GetComponent <KeyBindings> ().registerBindingAction ("move", this);
+
 		// Default Keybindings.
 		KeyBinding binding = new KeyBinding ("left", this);
 		binding.setIsContinuous (true);

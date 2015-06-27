@@ -6,12 +6,12 @@ public class ArchTeleport : MonoBehaviour
 	public ArchTeleport adjoiningDoor;
 
 	GameObject player;
-	GameObject camera;
+	GameObject cameraObj;
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find ("Player");
-		camera = GameObject.Find ("Main Camera");
+		cameraObj = GameObject.Find ("Main Camera");
 	}
 	
 	// Update is called once per frame
@@ -58,6 +58,6 @@ public class ArchTeleport : MonoBehaviour
 		player.GetComponent <Movement>().snapToGround ();
 		
 		// Snap camera to new position.
-		camera.GetComponent <CameraMovement> ().cameraSnapToPlayer ();
+		cameraObj.GetComponent <CameraMovement> ().cameraSnapToPlayer ();
 	}
 }

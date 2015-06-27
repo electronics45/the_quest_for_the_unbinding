@@ -8,9 +8,15 @@ public class Jump : MonoBehaviour, BindingAction {
 
 	float distToGround;
 
+	GameObject player;
+
 	// Use this for initialization
 	void Start () {
+		player = GameObject.Find ("Player");
+
 		distToGround = GetComponent <Collider> ().bounds.extents.y;
+
+		player.GetComponent <KeyBindings> ().registerBindingAction ("jump", this);
 
 		// Setup default keybindings
 		KeyBinding binding = new KeyBinding ("low_jump", this);

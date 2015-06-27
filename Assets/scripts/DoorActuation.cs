@@ -8,12 +8,14 @@ public class DoorActuation : MonoBehaviour, BindingAction
 
 	bool playerIsAtDoor = false;
 	GameObject player;
-	GameObject camera;
+	GameObject cameraObj;
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find ("Player");
-		camera = GameObject.Find ("Main Camera");
+		cameraObj = GameObject.Find ("Main Camera");
+
+		player.GetComponent <KeyBindings> ().registerBindingAction ("openDoor", this);
 
 		// Setup default keybinding.
 		KeyBinding binding = new KeyBinding ("open", this);
@@ -83,6 +85,6 @@ public class DoorActuation : MonoBehaviour, BindingAction
 		player.GetComponent <Movement>().snapToGround ();
 
 		// Snap camera to new position.
-		camera.GetComponent <CameraMovement> ().cameraSnapToPlayer ();
+		cameraObj.GetComponent <CameraMovement> ().cameraSnapToPlayer ();
 	}
 }

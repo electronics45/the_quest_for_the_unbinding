@@ -8,6 +8,7 @@ public class KeyBinding
 	public bool m_isContinuous = false;
 
 	public string m_bindingName;
+	public string m_funnyText;
 
 	public List <KeyCode> requiredKeysDown = new List<KeyCode>();
 	bool m_isTriggeredDown = false;

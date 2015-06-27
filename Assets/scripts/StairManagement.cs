@@ -15,6 +15,8 @@ public class StairManagement : MonoBehaviour, BindingAction
 		//yield return new WaitForSeconds (0.1f);
 		player = GameObject.Find ("Player");
 
+		player.GetComponent <KeyBindings> ().registerBindingAction ("stairs", this);
+
 		// Setup default keyBindings.
 		KeyBinding binding = new KeyBinding ("stairsDown", this);
 		binding.setIsContinuous (true);
@@ -23,12 +25,12 @@ public class StairManagement : MonoBehaviour, BindingAction
 		
 		player.GetComponent <KeyBindings> ().aquireKeyBinding (binding);
 
-		binding = new KeyBinding ("stairsUp", this);
-		binding.setIsContinuous (true);
-		binding.addKeyDown (KeyCode.T);
-		//binding.addKeyDown (KeyCode.H);
-		
-		player.GetComponent <KeyBindings> ().aquireKeyBinding (binding);
+//		binding = new KeyBinding ("stairsUp", this);
+//		binding.setIsContinuous (true);
+//		binding.addKeyDown (KeyCode.T);
+//		//binding.addKeyDown (KeyCode.H);
+//		
+//		player.GetComponent <KeyBindings> ().aquireKeyBinding (binding);
 	}
 	
 	// Update is called once per frame
@@ -65,7 +67,7 @@ public class StairManagement : MonoBehaviour, BindingAction
 			player.GetComponent <Movement>().isMovementEnabled = false;
 			player.GetComponent <Movement>().stop();
 
-			Debug.Log ("in Stairs.");
+		//	Debug.Log ("in Stairs.");
 			m_isInStairs = true;
 		}
 	}
@@ -74,7 +76,7 @@ public class StairManagement : MonoBehaviour, BindingAction
 	{
 		if (otherCollider.gameObject.name == "Player")
 		{
-			Debug.Log ("exit Stairs.");
+		//	Debug.Log ("exit Stairs.");
 			m_isInStairs = false;
 			GetComponent <Collider> ().isTrigger = false;
 
@@ -95,7 +97,7 @@ public class StairManagement : MonoBehaviour, BindingAction
 
 	void moveIntoStairs()
 	{
-		Debug.Log ("Setting trigger");
+		//Debug.Log ("Setting trigger");
 		// Turn Stairs into trigger.
 		GetComponent <Collider> ().isTrigger = true;
 
