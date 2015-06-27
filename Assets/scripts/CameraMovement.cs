@@ -4,7 +4,7 @@ using System.Collections;
 public class CameraMovement : MonoBehaviour {
 
 	GameObject player;
-	float camTargetHeight;
+	float camTargetHeightOffset;
 	bool fixedUpdatePerformed = false;
 
 	// Use this for initialization
@@ -12,7 +12,7 @@ public class CameraMovement : MonoBehaviour {
 	{
 		player = GameObject.Find ("Player");
 
-		camTargetHeight = transform.position.y;
+		camTargetHeightOffset = transform.position.y - player.transform.position.y;
 	}
 	
 	// Update is called once per frame
@@ -42,7 +42,7 @@ public class CameraMovement : MonoBehaviour {
 		//targetPos = new Vector3 (targetPos.x, targetPos.y, transform.position.x);
 
 		newPos.x = Mathf.Lerp (transform.position.x, targetPos.x, lerpWeight * Time.deltaTime);
-		newPos.y = Mathf.Lerp (transform.position.y, targetPos.y + camTargetHeight, lerpWeight * Time.deltaTime);
+		newPos.y = Mathf.Lerp (transform.position.y, targetPos.y + camTargetHeightOffset, lerpWeight * Time.deltaTime);
 
 		transform.position = newPos;
 	}
@@ -52,7 +52,7 @@ public class CameraMovement : MonoBehaviour {
 		Vector3 targetPos = gameObject.transform.position;
 
 		targetPos.x = player.gameObject.transform.position.x;
-		targetPos.y = player.gameObject.transform.position.y + camTargetHeight;
+		targetPos.y = player.gameObject.transform.position.y + camTargetHeightOffset;
 
 		transform.position = targetPos;
 	}
