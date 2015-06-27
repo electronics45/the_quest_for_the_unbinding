@@ -33,7 +33,10 @@ public class StairManagement : MonoBehaviour, BindingAction
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (m_isInStairs)
+		{
+			//player.GetComponent <Movement>().snapToGround();
+		}
 	}
 
 	void OnCollisionEnter (Collision collision)
