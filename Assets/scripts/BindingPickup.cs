@@ -11,10 +11,12 @@ public class BindingPickup : MonoBehaviour {
 	public bool isContinuous = false;
 
 	GameObject player;
+	Inventory inventory;
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find ("Player");
+		inventory = GameObject.Find ("Inventory").GetComponent<Inventory>();
 	}
 	
 	// Update is called once per frame
@@ -47,7 +49,12 @@ public class BindingPickup : MonoBehaviour {
 
 		keyBinding.m_funnyText = bindgingDescription;
 
+		//discardKeyBinding
 		allBindings.aquireKeyBinding (keyBinding);
+
+		// Redraw keybindings.
+		inventory.clearAllKeyBindings ();
+		inventory.drawAllKeybindings ();
 
 		gameObject.SetActive (false);
 	}
