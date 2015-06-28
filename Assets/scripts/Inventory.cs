@@ -45,6 +45,8 @@ public class Inventory : MonoBehaviour, BindingAction {
 		player.GetComponent <KeyBindings> ().aquireKeyBinding (binding);
 
 		drawAllKeybindings ();
+
+		gameObject.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -131,10 +133,19 @@ public class Inventory : MonoBehaviour, BindingAction {
 
 	public void drawAllKeybindings ()
 	{
+		List <string> drawnBindings = new List<string>();
+
 		foreach (KeyBinding binding in player.GetComponent <KeyBindings> ().m_keyBindings)
 		{
+			if (drawnBindings.Contains (binding.m_bindingName))
+			{
+				continue;
+			}
+
 			Debug.Log ("Drawing: " + binding.m_funnyText);
 			drawKeyBinding (binding);
+
+			drawnBindings.Add (binding.m_bindingName);
 		}
 	}
 
