@@ -18,11 +18,7 @@ Material:
         first:
           name: _MainTex
         second:
-<<<<<<< HEAD
-          m_Texture: {fileID: 2800000, guid: 25fdfffb9285267418e5a2f6830ba9f8, type: 3}
-=======
-          m_Texture: {fileID: 2800000, guid: 0e31c5544837cf64082027661cecaa62, type: 3}
->>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
+          m_Texture: {fileID: 2800000, guid: 8bfc661055fd0c74f8d4f0f71b1642cf, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -41,66 +37,42 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-<<<<<<< HEAD
-          name: _ParallaxMap
-=======
           name: _MetallicGlossMap
->>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-<<<<<<< HEAD
-          name: _OcclusionMap
-=======
           name: _ParallaxMap
->>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-<<<<<<< HEAD
-          name: _EmissionMap
-=======
           name: _OcclusionMap
->>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-<<<<<<< HEAD
-          name: _DetailMask
-=======
           name: _EmissionMap
->>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-<<<<<<< HEAD
-          name: _DetailAlbedoMap
-=======
           name: _DetailMask
->>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-<<<<<<< HEAD
-          name: _MetallicGlossMap
-=======
           name: _DetailAlbedoMap
->>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -120,13 +92,6 @@ Material:
         second: 0
       data:
         first:
-<<<<<<< HEAD
-          name: _Parallax
-        second: .0199999996
-      data:
-        first:
-=======
->>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
           name: _ZWrite
         second: 1
       data:
@@ -135,24 +100,18 @@ Material:
         second: .5
       data:
         first:
-<<<<<<< HEAD
-=======
           name: _Metallic
         second: 0
       data:
         first:
->>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
           name: _BumpScale
         second: 1
       data:
         first:
-<<<<<<< HEAD
-=======
           name: _Parallax
         second: .0199999996
       data:
         first:
->>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
           name: _OcclusionStrength
         second: 1
       data:
@@ -171,13 +130,6 @@ Material:
         first:
           name: _Mode
         second: 0
-<<<<<<< HEAD
-      data:
-        first:
-          name: _Metallic
-        second: 0
-=======
->>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
     m_Colors:
       data:
         first:
