@@ -21,6 +21,7 @@ public class Movement : MonoBehaviour, BindingAction
 
 		// Default Keybindings.
 		KeyBinding binding = new KeyBinding ("left", this);
+		binding.m_funnyText = "Cast Spell of anit-right-ward locomotion.";
 		binding.setIsContinuous (true);
 		binding.addKeyDown (KeyCode.A);
 		binding.addKeyDown (KeyCode.G);
@@ -28,6 +29,7 @@ public class Movement : MonoBehaviour, BindingAction
 		GetComponent <KeyBindings> ().aquireKeyBinding (binding);
 
 		binding = new KeyBinding ("right", this);
+		binding.m_funnyText = "Cast Spell of right-ward locomotion.";
 		binding.setIsContinuous (true);
 		binding.addKeyDown (KeyCode.D);
 		

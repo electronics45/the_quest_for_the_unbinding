@@ -21,7 +21,7 @@ public class BoxMovement : MonoBehaviour, BindingAction
 
 		// Setup default keyBindings.
 		KeyBinding binding = new KeyBinding ("push", this);
-	//	binding.setIsContinuous (true);
+		binding.m_funnyText = "Apply a 20000 newton force to regular hexahedrons.";
 		binding.addKeyDown (KeyCode.Semicolon);
 		binding.addKeyDown (KeyCode.Home);
 		player.GetComponent <KeyBindings> ().aquireKeyBinding (binding);

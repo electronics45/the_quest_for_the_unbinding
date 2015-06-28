@@ -25,6 +25,15 @@ public class KeyBindings : MonoBehaviour {
 
 	public void aquireKeyBinding (KeyBinding binding)
 	{
+		// Only add this binding if it has not already been added.
+		foreach (KeyBinding bind in m_keyBindings)
+		{
+			if (bind.m_bindingName == binding.m_bindingName)
+			{
+				return;
+			}
+		}
+
 		m_keyBindings.Add (binding);
 	}
 

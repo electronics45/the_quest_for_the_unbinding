@@ -20,10 +20,12 @@ public class Jump : MonoBehaviour, BindingAction {
 
 		// Setup default keybindings
 		KeyBinding binding = new KeyBinding ("low_jump", this);
+		binding.m_funnyText = "Perform a feeble excuse for 'jump'.";
 		binding.addKeyDown (KeyCode.Space);
 		GetComponent <KeyBindings> ().aquireKeyBinding (binding);
 
 		binding = new KeyBinding ("high_jump", this);
+		binding.m_funnyText = "Perferm a right proper jump.";
 		binding.addKeyDown (KeyCode.Space);
 		binding.addKeyDown (KeyCode.LeftControl);
 		GetComponent <KeyBindings> ().aquireKeyBinding (binding);
@@ -36,7 +38,7 @@ public class Jump : MonoBehaviour, BindingAction {
 
 	bool isGrounded ()
 	{
-		return Physics.Raycast (transform.position, Vector3.down, distToGround + 0.01f);
+		return Physics.Raycast (transform.position - distToGround * Vector3.down, Vector3.down, distToGround + 0.01f);
 	}
 
 	void BindingAction.executeBinding (string actionName)

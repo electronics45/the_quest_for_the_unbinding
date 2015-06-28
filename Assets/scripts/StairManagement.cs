@@ -19,6 +19,7 @@ public class StairManagement : MonoBehaviour, BindingAction
 
 		// Setup default keyBindings.
 		KeyBinding binding = new KeyBinding ("stairsDown", this);
+		binding.m_funnyText = "Descend terrain of regular, increments.";
 		binding.setIsContinuous (true);
 		binding.addKeyDown (KeyCode.Y);
 	//	binding.addKeyDown (KeyCode.G);

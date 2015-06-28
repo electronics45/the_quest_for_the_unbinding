@@ -19,6 +19,7 @@ public class DoorActuation : MonoBehaviour, BindingAction
 
 		// Setup default keybinding.
 		KeyBinding binding = new KeyBinding ("open", this);
+		binding.m_funnyText = "Actuate door-handle of the ordinary variety.";
 		binding.addKeyDown (KeyCode.LeftControl);
 		binding.addKeyDown (KeyCode.LeftBracket);
 		
