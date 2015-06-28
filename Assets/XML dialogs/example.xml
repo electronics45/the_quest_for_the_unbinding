@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xml>
+	<dialog id = "1">
+		<phrase actor = "princess">Oh! Please rescue me!</phrase>
+		<phrase actor = "villain">I cast a key unbinding spell on you!\nAhahahahaha!</phrase>
+		<phrase actor = "princess">BlaBlaBla</phrase>
+		<phrase actor = "villain">BlaBlaBlaBlaBlaBlaBlaBlaBla</phrase>
+	</dialog>
+	
+	<dialog id = "2">
+		<phrase actor = "princess">BlaBlaBlaBlaBlaBlaBlaBlaBla!</phrase>
+		<phrase actor = "villain">BlaBlaBla</phrase>
+		<phrase actor = "princess">BlaBlaBla</phrase>
+		<phrase actor = "villain">BlaBlaBlaBlaBlaBlaBlaBlaBla</phrase>
+		<phrase actor = "princess">BlaBlaBlaBlaBlaBlaBlaBlaBla!</phrase>
+		<phrase actor = "villain">BlaBlaBla</phrase>
+		<phrase actor = "princess">BlaBlaBla</phrase>
+		<phrase actor = "villain">BlaBlaBlaBlaBlaBlaBlaBlaBla</phrase>
+	</dialog>
+</xml>
