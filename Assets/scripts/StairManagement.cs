@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class StairManagement : MonoBehaviour, BindingAction
 {
@@ -9,8 +10,21 @@ public class StairManagement : MonoBehaviour, BindingAction
 	bool m_isInStairs;
 	bool m_isAgainstStairs = false;
 
+//	static IList <StairManagement> allTheStairs;
+
+	string BindingAction.getActionName()
+	{
+		return "StairManagement";
+	}
+
+	static void executeAllTheBindings ()
+	{
+
+	}
+
 	// Use this for initialization
 	void Start () {
+		//allTheStairs.Add (this);
 
 		//yield return new WaitForSeconds (0.1f);
 		player = GameObject.Find ("Player");
@@ -176,3 +190,4 @@ public class StairManagement : MonoBehaviour, BindingAction
 		player.GetComponent <Movement> ().stop ();
 	}
 }
+

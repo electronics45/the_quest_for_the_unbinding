@@ -17,6 +17,11 @@ public class Inventory : MonoBehaviour, BindingAction {
 	KeyBindings allBindings;
 	GameObject player;
 
+	string BindingAction.getActionName()
+	{
+		return "Inventory";
+	}
+
 	//GameObject InventoryRoot;
 
 	// Use this for initialization

@@ -10,6 +10,11 @@ public class DoorActuation : MonoBehaviour, BindingAction
 	GameObject player;
 	GameObject cameraObj;
 
+	string BindingAction.getActionName()
+	{
+		return "DoorActuation";
+	}
+
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find ("Player");

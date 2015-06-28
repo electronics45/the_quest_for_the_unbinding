@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class BoxMovement : MonoBehaviour, BindingAction
 {
@@ -11,8 +12,17 @@ public class BoxMovement : MonoBehaviour, BindingAction
 
 	float pushForce = 20000;
 
+	string BindingAction.getActionName()
+	{
+		return "BoxMovement";
+	}
+
+//	static IList <BoxMovement> allTheThings;
+
 	// Use this for initialization
 	void Start () {
+		//allTheThings.Add (this);
+
 		player = GameObject.Find ("Player");
 		distToGround = GetComponent <Collider> ().bounds.extents.y;
 		distToEdge = GetComponent <Collider> ().bounds.extents.x;
@@ -31,6 +41,14 @@ public class BoxMovement : MonoBehaviour, BindingAction
 	void Update () {
 		checkForBoxDrop ();
 	}
+
+//	void BindingAction.executeAllTheBindings (string actionName)
+//	{
+//		foreach (BoxMovement thing in allTheThings)
+//		{
+//			thing.executeBinding
+//		}
+//	}
 
 	void OnTriggerEnter (Collider otherCollider)
 	{

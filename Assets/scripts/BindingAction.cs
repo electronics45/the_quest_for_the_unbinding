@@ -6,4 +6,6 @@ public interface BindingAction
 	void executeBinding (string actionName);
 	
 	void onBindingRelease (string actionName);
+
+	string getActionName ();
 }

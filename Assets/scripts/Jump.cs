@@ -10,6 +10,11 @@ public class Jump : MonoBehaviour, BindingAction {
 
 	GameObject player;
 
+	string BindingAction.getActionName()
+	{
+		return "Jump";
+	}
+
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find ("Player");

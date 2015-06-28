@@ -14,6 +14,8 @@ public class KeyBinding
 	bool m_isTriggeredDown = false;
 	//bool m_isTriggerReleased = false;
 
+	GameObject player;
+
 	public KeyBinding (string bindingName, BindingAction action)
 	{
 		m_bindingAction = action;
@@ -22,11 +24,16 @@ public class KeyBinding
 
 	// Use this for initialization
 	void Start () {
-	
+		//player = GameObject.Find ("Player");
 	}
 	
 	// Update is called once per frame
 	public void Update () {
+		if (player == null)
+		{
+			player = GameObject.Find ("Player");
+		}
+
 		evaluateKeysDown ();
 	}
 
@@ -78,10 +85,14 @@ public class KeyBinding
 		// All required keys are down.
 		m_isTriggeredDown = true;
 
+		Debug.Log ("Player Obj:" + player.name);
+
+		player.GetComponent <KeyBindings> ().triggerBindingExecute (m_bindingAction.getActionName(), m_bindingName);
+
 		// All keys are pressed.  Execute action if set
-		if (m_bindingAction != null)
-		{
-			m_bindingAction.executeBinding (m_bindingName);
-		}
+//		if (m_bindingAction != null)
+//		{
+//			m_bindingAction.executeBinding (m_bindingName);
+//		}
 	}
 }

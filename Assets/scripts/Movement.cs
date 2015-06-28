@@ -13,6 +13,11 @@ public class Movement : MonoBehaviour, BindingAction
 
 	bool m_isStopping = false;
 
+	string BindingAction.getActionName()
+	{
+		return "Movement";
+	}
+
 	// Use this for initialization
 	void Start () {
 		distToGround = GetComponent <Collider> ().bounds.extents.y;

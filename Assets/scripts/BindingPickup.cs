@@ -35,9 +35,11 @@ public class BindingPickup : MonoBehaviour {
 
 	void aquireBinding ()
 	{
-		KeyBindings allBindings = GameObject.Find ("Player").GetComponent <KeyBindings> ();
+		KeyBindings allBindings = player.GetComponent <KeyBindings> ();
 
 		BindingAction action = player.GetComponent <KeyBindings> ().getBindingAction (bindingActionName);
+
+		//Debug.Log ("Binding action:" + action.ToString());
 
 		KeyBinding keyBinding = new KeyBinding (bindingId, action);
 		keyBinding.setIsContinuous (isContinuous);

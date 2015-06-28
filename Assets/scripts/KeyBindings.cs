@@ -10,6 +10,14 @@ public class KeyBindings : MonoBehaviour {
 
 	Hashtable bindingActions = new Hashtable();
 
+	List <BindingAction> allTheActions = new List<BindingAction>();
+	//Hashtable allTheActions = new Hashtable();
+
+//	public void registerAction (BindingAction action)
+//	{
+//		allTheActions.Add (action);
+//	}
+
 	// Use this for initialization
 	void Start () {
 	
@@ -41,7 +49,7 @@ public class KeyBindings : MonoBehaviour {
 ////				break;
 //			}
 //		}
-		//Debug.Log ("aquiring binding: " + binding.m_bindingName );
+		Debug.Log ("aquiring binding: " + binding.m_bindingName + "With num bindings: " + binding.requiredKeysDown.Count);
 		m_keyBindings.Add (binding);
 	}
 
@@ -58,6 +66,18 @@ public class KeyBindings : MonoBehaviour {
 	public void registerBindingAction (string bindingName, BindingAction action)
 	{
 		bindingActions [bindingName] = action;
+		allTheActions.Add (action);
+	}
+
+	public void triggerBindingExecute (string actionName, string bindingTag)
+	{
+		foreach (BindingAction action in allTheActions)
+		{
+			if (action.getActionName() == actionName)
+			{
+				action.executeBinding (bindingTag);
+			}
+		}
 	}
 }
 
