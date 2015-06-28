@@ -30,7 +30,7 @@ public class Jump : MonoBehaviour, BindingAction {
 		binding.addKeyDown (KeyCode.LeftControl);
 		GetComponent <KeyBindings> ().aquireKeyBinding (binding);
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 	

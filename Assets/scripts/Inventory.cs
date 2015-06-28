@@ -2,11 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Inventory : MonoBehaviour {
+public class Inventory : MonoBehaviour, BindingAction {
 
-	public Vector3 nextKeyPos = new Vector3 (-2.785f, 0.129f, 0.0f);
+	public Vector3 startKeyPos = new Vector3 (-2.785f, 0.129f, 0.0f);
 
 	public float ySeparation = 0.4f;
+
+	Vector3 nextKeyPos;
 
 	List <GameObject> keyBindings;
 	Hashtable keyTextureMap = new Hashtable();
@@ -23,24 +25,51 @@ public class Inventory : MonoBehaviour {
 		player = GameObject.Find ("Player");
 		allBindings = player.GetComponent <KeyBindings> ();
 
-		// Setup default keybinding.
-		KeyBinding binding = new KeyBinding ("open", GameObject.Find ("Player").GetComponent <Jump>());
-		binding.m_funnyText = "Aquire the orb of Osiris.";
-		binding.addKeyDown (KeyCode.Semicolon);
-		binding.addKeyDown (KeyCode.K);
-		binding.addKeyDown (KeyCode.Space);
+		nextKeyPos = startKeyPos;
+
+//		// Setup default keybinding.
+//		KeyBinding binding = new KeyBinding ("open", GameObject.Find ("Player").GetComponent <Jump>());
+//		binding.m_funnyText = "Aquire the orb of Osiris.";
+//		binding.addKeyDown (KeyCode.Semicolon);
+//		binding.addKeyDown (KeyCode.K);
+//		binding.addKeyDown (KeyCode.Space);
 		
 		//player.GetComponent <KeyBindings> ().aquireKeyBinding (binding);
 
-
 		//drawKeyBinding (binding);
+
+		// Setup default keybinding.
+		KeyBinding binding = new KeyBinding ("inv", this);
+		binding.m_funnyText = "Review the scroll of key bindings.";
+		binding.addKeyDown (KeyCode.F1);
+		player.GetComponent <KeyBindings> ().aquireKeyBinding (binding);
 
 		drawAllKeybindings ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		// Show/hide inventory with "F1" key.
+
+		//clearAllKeyBindings ();
+		//drawAllKeybindings ();
+	}
+
+	void BindingAction.executeBinding (string actionName)
+	{
+		if (gameObject.activeSelf)
+		{
+			gameObject.SetActive (false);
+		}
+		else
+		{
+			gameObject.SetActive (true);
+		}
+	}
 	
+	void BindingAction.onBindingRelease (string actionName)
+	{
+
 	}
 
 	public void drawKeyBinding (KeyBinding binding)
@@ -102,7 +131,7 @@ public class Inventory : MonoBehaviour {
 
 	public void drawAllKeybindings ()
 	{
-		foreach (KeyBinding binding in allBindings.m_keyBindings)
+		foreach (KeyBinding binding in player.GetComponent <KeyBindings> ().m_keyBindings)
 		{
 			Debug.Log ("Drawing: " + binding.m_funnyText);
 			drawKeyBinding (binding);
@@ -111,12 +140,14 @@ public class Inventory : MonoBehaviour {
 
 	public void clearAllKeyBindings ()
 	{
+		nextKeyPos = startKeyPos;
+
 		// Clear all children with the "invBinding" tag.
 		foreach (Transform child in transform)
 		{
 			if (child.tag == "invBinding")
 			{
-				Destroy (child);
+				Destroy (child.gameObject);
 			}
 		}
 	}
