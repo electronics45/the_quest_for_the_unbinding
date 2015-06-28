@@ -9,6 +9,7 @@ public class Inventory : MonoBehaviour, BindingAction {
 	public float ySeparation = 0.4f;
 
 	Vector3 nextKeyPos;
+	bool hasDrawnInventory = false;
 
 	List <GameObject> keyBindings;
 	Hashtable keyTextureMap = new Hashtable();
@@ -44,9 +45,9 @@ public class Inventory : MonoBehaviour, BindingAction {
 		binding.addKeyDown (KeyCode.F1);
 		player.GetComponent <KeyBindings> ().aquireKeyBinding (binding);
 
-		drawAllKeybindings ();
+		//drawAllKeybindings ();
 
-		gameObject.SetActive (false);
+		//gameObject.SetActive (false);
 	}
 	
 	// Update is called once per frame
@@ -55,6 +56,15 @@ public class Inventory : MonoBehaviour, BindingAction {
 
 		//clearAllKeyBindings ();
 		//drawAllKeybindings ();
+
+		if (!hasDrawnInventory)
+		{
+			drawAllKeybindings ();
+			
+			gameObject.SetActive (false);
+
+			hasDrawnInventory = true;
+		}
 	}
 
 	void BindingAction.executeBinding (string actionName)
@@ -137,10 +147,10 @@ public class Inventory : MonoBehaviour, BindingAction {
 
 		foreach (KeyBinding binding in player.GetComponent <KeyBindings> ().m_keyBindings)
 		{
-			if (drawnBindings.Contains (binding.m_bindingName))
-			{
-				continue;
-			}
+//			if (drawnBindings.Contains (binding.m_bindingName))
+//			{
+//				continue;
+//			}
 
 			Debug.Log ("Drawing: " + binding.m_funnyText);
 			drawKeyBinding (binding);
