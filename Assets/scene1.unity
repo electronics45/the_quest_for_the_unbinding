@@ -9703,6 +9703,10 @@ Prefab:
       propertyPath: m_Name
       value: Inventory
       objectReference: {fileID: 0}
+    - target: {fileID: 153936, guid: 71aa673e97846d84a8e16be316fad00d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 71aa673e97846d84a8e16be316fad00d, type: 2}
   m_IsPrefabParent: 0

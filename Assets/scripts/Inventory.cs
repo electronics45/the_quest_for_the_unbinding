@@ -147,10 +147,10 @@ public class Inventory : MonoBehaviour, BindingAction {
 
 		foreach (KeyBinding binding in player.GetComponent <KeyBindings> ().m_keyBindings)
 		{
-//			if (drawnBindings.Contains (binding.m_bindingName))
-//			{
-//				continue;
-//			}
+			if (drawnBindings.Contains (binding.m_bindingName))
+			{
+				continue;
+			}
 
 			Debug.Log ("Drawing: " + binding.m_funnyText);
 			drawKeyBinding (binding);
@@ -199,8 +199,8 @@ public class Inventory : MonoBehaviour, BindingAction {
 		keyTextureMap [KeyCode.Backslash] = (Texture2D) Resources.Load ("textures/KeyDiff/BACKSLASH");
 		keyTextureMap [KeyCode.C] = (Texture2D) Resources.Load ("textures/KeyDiff/C");
 		keyTextureMap [KeyCode.Comma] = (Texture2D) Resources.Load ("textures/KeyDiff/COMMA");
-		keyTextureMap [KeyCode.LeftControl] = (Texture2D) Resources.Load ("textures/KeyDiff/Ctl");
-		keyTextureMap [KeyCode.RightControl] = (Texture2D) Resources.Load ("textures/KeyDiff/Ctl");
+		keyTextureMap [KeyCode.LeftControl] = (Texture2D) Resources.Load ("textures/KeyDiff/Ctrl");
+		keyTextureMap [KeyCode.RightControl] = (Texture2D) Resources.Load ("textures/KeyDiff/Ctrl");
 		keyTextureMap [KeyCode.D] = (Texture2D) Resources.Load ("textures/KeyDiff/D");
 		keyTextureMap [KeyCode.E] = (Texture2D) Resources.Load ("textures/KeyDiff/E");
 		keyTextureMap [KeyCode.F] = (Texture2D) Resources.Load ("textures/KeyDiff/F");
