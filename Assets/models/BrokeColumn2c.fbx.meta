@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 5a18e65b142391c4485f70768fed5ac1
 timeCreated: 1435459287
+=======
+guid: 737eb051b3b3e834694923bcb97a2701
+timeCreated: 1435461685
+>>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
 licenseType: Pro
 ModelImporter:
   serializedVersion: 18

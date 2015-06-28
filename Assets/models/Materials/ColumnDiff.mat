@@ -18,7 +18,11 @@ Material:
         first:
           name: _MainTex
         second:
+<<<<<<< HEAD
           m_Texture: {fileID: 2800000, guid: 5f88891e65385034ea41e36969dc86da, type: 3}
+=======
+          m_Texture: {fileID: 2800000, guid: 797e847bbeac0b94e82697084def56c3, type: 3}
+>>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -37,42 +41,66 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+<<<<<<< HEAD
           name: _ParallaxMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _OcclusionMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _EmissionMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _DetailMask
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _DetailAlbedoMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
+=======
           name: _MetallicGlossMap
+>>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+<<<<<<< HEAD
+          name: _OcclusionMap
+=======
+          name: _ParallaxMap
+>>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+<<<<<<< HEAD
+          name: _EmissionMap
+=======
+          name: _OcclusionMap
+>>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+<<<<<<< HEAD
+          name: _DetailMask
+=======
+          name: _EmissionMap
+>>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+<<<<<<< HEAD
+          name: _DetailAlbedoMap
+=======
+          name: _DetailMask
+>>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+<<<<<<< HEAD
+          name: _MetallicGlossMap
+=======
+          name: _DetailAlbedoMap
+>>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -92,10 +120,13 @@ Material:
         second: 0
       data:
         first:
+<<<<<<< HEAD
           name: _Parallax
         second: .0199999996
       data:
         first:
+=======
+>>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
           name: _ZWrite
         second: 1
       data:
@@ -104,10 +135,24 @@ Material:
         second: .5
       data:
         first:
+<<<<<<< HEAD
+=======
+          name: _Metallic
+        second: 0
+      data:
+        first:
+>>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
           name: _BumpScale
         second: 1
       data:
         first:
+<<<<<<< HEAD
+=======
+          name: _Parallax
+        second: .0199999996
+      data:
+        first:
+>>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
           name: _OcclusionStrength
         second: 1
       data:
@@ -126,10 +171,13 @@ Material:
         first:
           name: _Mode
         second: 0
+<<<<<<< HEAD
       data:
         first:
           name: _Metallic
         second: 0
+=======
+>>>>>>> 8c73f7384973aafded4033725a8184e9c0e0ca51
     m_Colors:
       data:
         first:
