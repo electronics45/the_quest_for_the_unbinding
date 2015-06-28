@@ -50,6 +50,8 @@ public class Inventory : MonoBehaviour, BindingAction {
 		binding.addKeyDown (KeyCode.F1);
 		player.GetComponent <KeyBindings> ().aquireKeyBinding (binding);
 
+		player.GetComponent <KeyBindings> ().registerBindingAction ("inventory", this);
+
 		//drawAllKeybindings ();
 
 		//gameObject.SetActive (false);
