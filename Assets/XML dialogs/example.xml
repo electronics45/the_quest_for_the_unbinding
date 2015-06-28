@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <xml>
 	<dialog id = "1">
-		<phrase actor = "princess">Oh! Please rescue me!</phrase>
-		<phrase actor = "villain">I cast a key unbinding spell on you!\nAhahahahaha!</phrase>
-		<phrase actor = "princess">BlaBlaBla</phrase>
-		<phrase actor = "villain">BlaBlaBlaBlaBlaBlaBlaBlaBla</phrase>
+		<phrase actor = "princess">Oh! Someone, please rescue me!</phrase>
+		<phrase actor = "player">Do not fear, I have come for you my princess.</phrase>
+		<phrase actor = "villain">Not while I'm around\nI have cast an unbinding spell on you!\nYou are helpless\nAhahahahaha!</phrase>
+		<phrase actor = "princess">Oh no! I'm trapped forever</phrase>
+		<phrase actor = "player">I should have stayed at home.</phrase>
 	</dialog>
 	
 	<dialog id = "2">
