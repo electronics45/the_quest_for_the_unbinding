@@ -69,6 +69,8 @@ public class Movement : MonoBehaviour, BindingAction
 			body.velocity = new Vector3 (m_maxMoveSpeed, body.velocity.y, body.velocity.z);
 		}
 
+		transform.GetChild (0).GetComponent <Animator>().SetBool ("isWalking",  true);
+
 		//body.AddForce (Vector3.left * (moveSpeed * Time.deltaTime));
 
 //		if (body.velocity.x < -m_maxMoveSpeed)
@@ -93,6 +95,9 @@ public class Movement : MonoBehaviour, BindingAction
 		//		{
 		//			additionalForce = m_maxMoveSpeed - 
 		//		}
+
+		// Set animation to "walking".
+		transform.GetChild (0).GetComponent <Animator>().SetBool ("isWalking",  true);
 		
 		if (body.velocity.x > -m_maxMoveSpeed)
 		{
@@ -153,7 +158,11 @@ public class Movement : MonoBehaviour, BindingAction
 		}
 		else		
 		{
+			// Body has come to rest.
 			body.velocity = new Vector3 (0, body.velocity.y, body.velocity.z);
+
+			// Reset animation to "not walking".
+			transform.GetChild (0).GetComponent <Animator>().SetBool ("isWalking",  false);
 		}
 	}
 
