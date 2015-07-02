@@ -4,9 +4,10 @@ using System.Collections.Generic;
 
 public class Inventory : MonoBehaviour, BindingAction {
 
-	public Vector3 startKeyPos = new Vector3 (-2.785f, 0.129f, 0.0f);
+	//public Vector3 startKeyPos = new Vector3 (-2.785f, 0.129f, 0.0f);
+	public Vector3 startKeyPos = new Vector3 (-2.25f, -0.009f, 0.0f);
 
-	public float ySeparation = 0.4f;
+	public float ySeparation = 0.35f;
 
 	Vector3 nextKeyPos;
 	bool hasDrawnInventory = false;
