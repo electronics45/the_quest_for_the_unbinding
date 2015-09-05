@@ -7,6 +7,8 @@ public class Jump : MonoBehaviour, BindingAction {
 	public float highJumpForce = 100;
 
 	float distToGround;
+	float jumpTimeOut = 0.2f;
+	float jumpTimer = 0.0f;
 
 	GameObject player;
 
@@ -37,8 +39,21 @@ public class Jump : MonoBehaviour, BindingAction {
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 	
+	}
+
+	void FixedUpdate()
+	{
+		if (jumpTimer <= 0 && isGrounded())
+		{
+			transform.GetChild (0).GetComponent <Animator>().SetBool ("isJumping",  false);
+		}
+		if (jumpTimer > 0)
+		{
+			jumpTimer -= Time.fixedDeltaTime;
+		}
 	}
 
 	bool isGrounded ()
@@ -75,5 +90,8 @@ public class Jump : MonoBehaviour, BindingAction {
 		Rigidbody body = GetComponent <Rigidbody> ();
 
 		body.AddForce (0, force, 0);
+
+		transform.GetChild (0).GetComponent <Animator>().SetBool ("isJumping",  true);
+		jumpTimer = jumpTimeOut;
 	}
 }
