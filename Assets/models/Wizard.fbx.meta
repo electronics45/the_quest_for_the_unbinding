@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: d12f93ec729372d4a95f55837015b908
+timeCreated: 1441502743
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: chest1
+    100002: head1
+    100004: ikHandle1
+    100006: ikHandle2
+    100008: joint2
+    100010: L_ankle1
+    100012: L_clav1
+    100014: L_elbow1
+    100016: L_hand1
+    100018: L_heel1
+    100020: L_hip1
+    100022: L_knee1
+    100024: L_shoulder1
+    100026: L_toe1
+    100028: L_wrist1
+    100030: locator1
+    100032: locator2
+    100034: neck3
+    100036: neck4
+    100038: nurbsCircle1
+    100040: nurbsCircle10
+    100042: nurbsCircle11
+    100044: nurbsCircle12
+    100046: nurbsCircle13
+    100048: nurbsCircle14
+    100050: nurbsCircle2
+    100052: nurbsCircle3
+    100054: nurbsCircle4
+    100056: nurbsCircle5
+    100058: nurbsCircle6
+    100060: nurbsCircle7
+    100062: nurbsCircle8
+    100064: nurbsCircle9
+    100066: pCube11
+    100068: pCube15
+    100070: pCube16
+    100072: pCube18
+    100074: pCube22
+    100076: pCube23
+    100078: persp1
+    100080: R_ankle1
+    100082: R_clav1
+    100084: R_elbow1
+    100086: R_hand1
+    100088: R_heel1
+    100090: R_hip1
+    100092: R_knee1
+    100094: R_shoulder1
+    100096: R_toe1
+    100098: R_wrist1
+    100100: root
+    100102: //RootNode
+    100104: Wizard_pCube11
+    100106: Wizard_pCube15
+    100108: Wizard_pCube18
+    400000: chest1
+    400002: head1
+    400004: ikHandle1
+    400006: ikHandle2
+    400008: joint2
+    400010: L_ankle1
+    400012: L_clav1
+    400014: L_elbow1
+    400016: L_hand1
+    400018: L_heel1
+    400020: L_hip1
+    400022: L_knee1
+    400024: L_shoulder1
+    400026: L_toe1
+    400028: L_wrist1
+    400030: locator1
+    400032: locator2
+    400034: neck3
+    400036: neck4
+    400038: nurbsCircle1
+    400040: nurbsCircle10
+    400042: nurbsCircle11
+    400044: nurbsCircle12
+    400046: nurbsCircle13
+    400048: nurbsCircle14
+    400050: nurbsCircle2
+    400052: nurbsCircle3
+    400054: nurbsCircle4
+    400056: nurbsCircle5
+    400058: nurbsCircle6
+    400060: nurbsCircle7
+    400062: nurbsCircle8
+    400064: nurbsCircle9
+    400066: pCube11
+    400068: pCube15
+    400070: pCube16
+    400072: pCube18
+    400074: pCube22
+    400076: pCube23
+    400078: persp1
+    400080: R_ankle1
+    400082: R_clav1
+    400084: R_elbow1
+    400086: R_hand1
+    400088: R_heel1
+    400090: R_hip1
+    400092: R_knee1
+    400094: R_shoulder1
+    400096: R_toe1
+    400098: R_wrist1
+    400100: root
+    400102: //RootNode
+    400104: Wizard_pCube11
+    400106: Wizard_pCube15
+    400108: Wizard_pCube18
+    4300000: pCube22
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: pCube22
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

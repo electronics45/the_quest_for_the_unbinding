@@ -1,0 +1,622 @@
+fileFormatVersion: 2
+guid: 4f5b80a7d4688254a81ebcce8827f324
+timeCreated: 1441500082
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: chest1
+    100002: head1
+    100004: ikHandle1
+    100006: ikHandle2
+    100008: joint2
+    100010: L_ankle1
+    100012: L_clav1
+    100014: L_elbow1
+    100016: L_hand1
+    100018: L_heel1
+    100020: L_hip1
+    100022: L_knee1
+    100024: L_shoulder1
+    100026: L_toe1
+    100028: L_wrist1
+    100030: locator1
+    100032: locator2
+    100034: neck3
+    100036: neck4
+    100038: nurbsCircle1
+    100040: nurbsCircle10
+    100042: nurbsCircle11
+    100044: nurbsCircle12
+    100046: nurbsCircle13
+    100048: nurbsCircle14
+    100050: nurbsCircle2
+    100052: nurbsCircle3
+    100054: nurbsCircle4
+    100056: nurbsCircle5
+    100058: nurbsCircle6
+    100060: nurbsCircle7
+    100062: nurbsCircle8
+    100064: nurbsCircle9
+    100066: pCube11
+    100068: pCube15
+    100070: pCube16
+    100072: pCube18
+    100074: pCube23
+    100076: pCube25
+    100078: persp1
+    100080: //RootNode
+    100082: Princess_pCube11
+    100084: Princess_pCube15
+    100086: Princess_pCube16
+    100088: Princess_pCube18
+    100090: R_ankle1
+    100092: R_clav1
+    100094: R_elbow1
+    100096: R_hand1
+    100098: R_heel1
+    100100: R_hip1
+    100102: R_knee1
+    100104: R_shoulder1
+    100106: R_toe1
+    100108: R_wrist1
+    100110: root
+    100112: Wizard_pCube11
+    100114: Wizard_pCube15
+    100116: Wizard_pCube18
+    400000: chest1
+    400002: head1
+    400004: ikHandle1
+    400006: ikHandle2
+    400008: joint2
+    400010: L_ankle1
+    400012: L_clav1
+    400014: L_elbow1
+    400016: L_hand1
+    400018: L_heel1
+    400020: L_hip1
+    400022: L_knee1
+    400024: L_shoulder1
+    400026: L_toe1
+    400028: L_wrist1
+    400030: locator1
+    400032: locator2
+    400034: neck3
+    400036: neck4
+    400038: nurbsCircle1
+    400040: nurbsCircle10
+    400042: nurbsCircle11
+    400044: nurbsCircle12
+    400046: nurbsCircle13
+    400048: nurbsCircle14
+    400050: nurbsCircle2
+    400052: nurbsCircle3
+    400054: nurbsCircle4
+    400056: nurbsCircle5
+    400058: nurbsCircle6
+    400060: nurbsCircle7
+    400062: nurbsCircle8
+    400064: nurbsCircle9
+    400066: pCube11
+    400068: pCube15
+    400070: pCube16
+    400072: pCube18
+    400074: pCube23
+    400076: pCube25
+    400078: persp1
+    400080: //RootNode
+    400082: Princess_pCube11
+    400084: Princess_pCube15
+    400086: Princess_pCube16
+    400088: Princess_pCube18
+    400090: R_ankle1
+    400092: R_clav1
+    400094: R_elbow1
+    400096: R_hand1
+    400098: R_heel1
+    400100: R_hip1
+    400102: R_knee1
+    400104: R_shoulder1
+    400106: R_toe1
+    400108: R_wrist1
+    400110: root
+    400112: Wizard_pCube11
+    400114: Wizard_pCube15
+    400116: Wizard_pCube18
+    4300000: pCube25
+    7400000: walk
+    7400002: Take 001
+    7400004: idle
+    9500000: //RootNode
+    13700000: pCube25
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 26
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ikHandle1
+        weight: 1
+      - path: ikHandle2
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle1/locator1
+        weight: 1
+      - path: nurbsCircle1/locator2
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle12
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle13
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle4
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle4/nurbsCircle5
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle4/nurbsCircle5/nurbsCircle6
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle7
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle7/nurbsCircle8
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle7/nurbsCircle8/nurbsCircle9
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle11
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle11/nurbsCircle10
+        weight: 1
+      - path: pCube11
+        weight: 1
+      - path: pCube15
+        weight: 1
+      - path: pCube16
+        weight: 1
+      - path: pCube18
+        weight: 1
+      - path: pCube23
+        weight: 1
+      - path: pCube25
+        weight: 1
+      - path: persp1
+        weight: 1
+      - path: Princess_pCube11
+        weight: 1
+      - path: Princess_pCube15
+        weight: 1
+      - path: Princess_pCube16
+        weight: 1
+      - path: Princess_pCube18
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/joint2
+        weight: 1
+      - path: root/joint2/chest1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1/L_shoulder1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1/L_shoulder1/L_elbow1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1/L_shoulder1/L_elbow1/L_wrist1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1/L_shoulder1/L_elbow1/L_wrist1/L_hand1
+        weight: 1
+      - path: root/joint2/chest1/neck3
+        weight: 1
+      - path: root/joint2/chest1/neck3/neck4
+        weight: 1
+      - path: root/joint2/chest1/neck3/neck4/head1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1/R_shoulder1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1/R_shoulder1/R_elbow1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1/R_shoulder1/R_elbow1/R_wrist1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1/R_shoulder1/R_elbow1/R_wrist1/R_hand1
+        weight: 1
+      - path: root/L_hip1
+        weight: 1
+      - path: root/L_hip1/L_knee1
+        weight: 1
+      - path: root/L_hip1/L_knee1/L_ankle1
+        weight: 1
+      - path: root/L_hip1/L_knee1/L_ankle1/L_toe1
+        weight: 1
+      - path: root/L_hip1/L_knee1/L_ankle1/L_toe1/L_heel1
+        weight: 1
+      - path: root/R_hip1
+        weight: 1
+      - path: root/R_hip1/R_knee1
+        weight: 1
+      - path: root/R_hip1/R_knee1/R_ankle1
+        weight: 1
+      - path: root/R_hip1/R_knee1/R_ankle1/R_toe1
+        weight: 1
+      - path: root/R_hip1/R_knee1/R_ankle1/R_toe1/R_heel1
+        weight: 1
+      - path: Wizard_pCube11
+        weight: 1
+      - path: Wizard_pCube15
+        weight: 1
+      - path: Wizard_pCube18
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      firstFrame: 26
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ikHandle1
+        weight: 1
+      - path: ikHandle2
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle1/locator1
+        weight: 1
+      - path: nurbsCircle1/locator2
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle12
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle13
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle4
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle4/nurbsCircle5
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle4/nurbsCircle5/nurbsCircle6
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle7
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle7/nurbsCircle8
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle7/nurbsCircle8/nurbsCircle9
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle11
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle11/nurbsCircle10
+        weight: 1
+      - path: pCube11
+        weight: 1
+      - path: pCube15
+        weight: 1
+      - path: pCube16
+        weight: 1
+      - path: pCube18
+        weight: 1
+      - path: pCube23
+        weight: 1
+      - path: pCube25
+        weight: 1
+      - path: persp1
+        weight: 1
+      - path: Princess_pCube11
+        weight: 1
+      - path: Princess_pCube15
+        weight: 1
+      - path: Princess_pCube16
+        weight: 1
+      - path: Princess_pCube18
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/joint2
+        weight: 1
+      - path: root/joint2/chest1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1/L_shoulder1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1/L_shoulder1/L_elbow1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1/L_shoulder1/L_elbow1/L_wrist1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1/L_shoulder1/L_elbow1/L_wrist1/L_hand1
+        weight: 1
+      - path: root/joint2/chest1/neck3
+        weight: 1
+      - path: root/joint2/chest1/neck3/neck4
+        weight: 1
+      - path: root/joint2/chest1/neck3/neck4/head1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1/R_shoulder1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1/R_shoulder1/R_elbow1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1/R_shoulder1/R_elbow1/R_wrist1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1/R_shoulder1/R_elbow1/R_wrist1/R_hand1
+        weight: 1
+      - path: root/L_hip1
+        weight: 1
+      - path: root/L_hip1/L_knee1
+        weight: 1
+      - path: root/L_hip1/L_knee1/L_ankle1
+        weight: 1
+      - path: root/L_hip1/L_knee1/L_ankle1/L_toe1
+        weight: 1
+      - path: root/L_hip1/L_knee1/L_ankle1/L_toe1/L_heel1
+        weight: 1
+      - path: root/R_hip1
+        weight: 1
+      - path: root/R_hip1/R_knee1
+        weight: 1
+      - path: root/R_hip1/R_knee1/R_ankle1
+        weight: 1
+      - path: root/R_hip1/R_knee1/R_ankle1/R_toe1
+        weight: 1
+      - path: root/R_hip1/R_knee1/R_ankle1/R_toe1/R_heel1
+        weight: 1
+      - path: Wizard_pCube11
+        weight: 1
+      - path: Wizard_pCube15
+        weight: 1
+      - path: Wizard_pCube18
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 61
+      lastFrame: 63
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ikHandle1
+        weight: 1
+      - path: ikHandle2
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle1/locator1
+        weight: 1
+      - path: nurbsCircle1/locator2
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle12
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle13
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle4
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle4/nurbsCircle5
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle4/nurbsCircle5/nurbsCircle6
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle7
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle7/nurbsCircle8
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle7/nurbsCircle8/nurbsCircle9
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle11
+        weight: 1
+      - path: nurbsCircle1/nurbsCircle14/nurbsCircle2/nurbsCircle3/nurbsCircle11/nurbsCircle10
+        weight: 1
+      - path: pCube11
+        weight: 1
+      - path: pCube15
+        weight: 1
+      - path: pCube16
+        weight: 1
+      - path: pCube18
+        weight: 1
+      - path: pCube23
+        weight: 1
+      - path: pCube25
+        weight: 1
+      - path: persp1
+        weight: 1
+      - path: Princess_pCube11
+        weight: 1
+      - path: Princess_pCube15
+        weight: 1
+      - path: Princess_pCube16
+        weight: 1
+      - path: Princess_pCube18
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/joint2
+        weight: 1
+      - path: root/joint2/chest1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1/L_shoulder1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1/L_shoulder1/L_elbow1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1/L_shoulder1/L_elbow1/L_wrist1
+        weight: 1
+      - path: root/joint2/chest1/L_clav1/L_shoulder1/L_elbow1/L_wrist1/L_hand1
+        weight: 1
+      - path: root/joint2/chest1/neck3
+        weight: 1
+      - path: root/joint2/chest1/neck3/neck4
+        weight: 1
+      - path: root/joint2/chest1/neck3/neck4/head1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1/R_shoulder1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1/R_shoulder1/R_elbow1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1/R_shoulder1/R_elbow1/R_wrist1
+        weight: 1
+      - path: root/joint2/chest1/R_clav1/R_shoulder1/R_elbow1/R_wrist1/R_hand1
+        weight: 1
+      - path: root/L_hip1
+        weight: 1
+      - path: root/L_hip1/L_knee1
+        weight: 1
+      - path: root/L_hip1/L_knee1/L_ankle1
+        weight: 1
+      - path: root/L_hip1/L_knee1/L_ankle1/L_toe1
+        weight: 1
+      - path: root/L_hip1/L_knee1/L_ankle1/L_toe1/L_heel1
+        weight: 1
+      - path: root/R_hip1
+        weight: 1
+      - path: root/R_hip1/R_knee1
+        weight: 1
+      - path: root/R_hip1/R_knee1/R_ankle1
+        weight: 1
+      - path: root/R_hip1/R_knee1/R_ankle1/R_toe1
+        weight: 1
+      - path: root/R_hip1/R_knee1/R_ankle1/R_toe1/R_heel1
+        weight: 1
+      - path: Wizard_pCube11
+        weight: 1
+      - path: Wizard_pCube15
+        weight: 1
+      - path: Wizard_pCube18
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: d234f6f89bcefea4f89270d87e850fe2,
+    type: 3}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
